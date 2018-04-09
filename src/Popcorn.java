@@ -10,6 +10,7 @@
  */
 
 class Microwave {
+	
 	private int cookTime;
 	Popcorn thingToBeCooked;
 
@@ -37,7 +38,14 @@ class Microwave {
 }
 
 public class Popcorn {
-
+public static void main(String[] args) {
+	Microwave molly = new Microwave();
+	Popcorn foodz = new Popcorn("butter");
+	molly.putInMicrowave(foodz);
+	molly.setTime(2);
+	molly.startMicrowave();
+	
+}
 	private int kernels = 20;
 	private String flavor;
 
